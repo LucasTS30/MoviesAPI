@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MoviesAPI</name>
+    </assembly>
+    <members>
+        <member name="M:MoviesAPI.Controllers.MovieController.AddMovie(MoviesAPI.Data.DTOs.CreateMovieDto)">
+            <summary>
+            Add a movie in the database
+            </summary>
+            <param name="movieDto">Object with the necessary fieds to create a movie</param>
+            <returns></returns>
+        </member>
+        <member name="M:MoviesAPI.Controllers.MovieController.GetMovies(System.Int32,System.Int32)">
+            <summary>
+            List with movies
+            </summary>
+            <param name="skip">Number of movies that will be skipped</param>
+            <param name="take">Number of movies that will be taked</param>
+            <returns></returns>
+        </member>
+        <member name="M:MoviesAPI.Controllers.MovieController.GetMovieById(System.Int32)">
+            <summary>
+            Get a movie
+            </summary>
+            <param name="id">Movie identifier to select the movie that will be selected</param>
+            <returns></returns>
+        </member>
+        <member name="M:MoviesAPI.Controllers.MovieController.UpdateMovie(System.Int32,MoviesAPI.Data.DTOs.UpdateMovieDto)">
+            <summary>
+            Update a movie
+            </summary>
+            <param name="id">Movie identifier to select the movie that will be updated</param>
+            <returns></returns>
+        </member>
+        <member name="M:MoviesAPI.Controllers.MovieController.PartialUpdateMovie(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{MoviesAPI.Data.DTOs.UpdateMovieDto})">
+            <summary>
+            Update a movie partially
+            </summary>
+            <param name="id">Movie identifier to select the movie that will be partially updated</param>
+            <param name="patch">Json with the field and values that will be updated</param>
+            <returns></returns>
+        </member>
+        <member name="M:MoviesAPI.Controllers.MovieController.DeletaFilme(System.Int32)">
+            <summary>
+            Delete a movie
+            </summary>
+            <param name="id">Movie identifier to select the movie that will be deleted</param>
+            <returns></returns>
+        </member>
+        <member name="T:MoviesAPI.Migrations.CreateMovieTable">
+            <inheritdoc />
+        </member>
+        <member name="M:MoviesAPI.Migrations.CreateMovieTable.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MoviesAPI.Migrations.CreateMovieTable.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MoviesAPI.Migrations.CreateMovieTable.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
